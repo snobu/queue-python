@@ -10,6 +10,10 @@ fortune &rarr; Azure Storage Queue &rarr; Python Consumer Demo
 
 **NOTE:** Azure Storage Queue names are always **all lowercase**.
 
+#### Dependencies:
+    $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+    $ pip install azure-storage blessings subprocess
+    
 #### Run `./qput.py` to post and `./qread.py` to read from queue:
     $ ./qput.py
     Writing to Azure Storage Queue queue1...
@@ -32,9 +36,7 @@ fortune &rarr; Azure Storage Queue &rarr; Python Consumer Demo
 
     ----------------------------------------
 
-#### Dependencies:
-    $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
-    $ pip install azure-storage blessings subprocess
-    
-#### How to use the Azure Storage SDK with Python:
+#### Further Reading:
+
+How to use the Azure Storage SDK with Python -
 https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-queue-storage
