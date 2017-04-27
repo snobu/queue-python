@@ -3,7 +3,6 @@ fortune &rarr; Azure Storage Queue &rarr; Python Consumer Demo
 --------------------------------------------------------------
 
 #### Create a flat file, name it `storage.conf` and make it look like this:
-
     [storage_account]
     accName = STORAGE_ACCOUNT_NAME
     accKey = STORAGE_ACCOUNT_KEY
@@ -11,8 +10,7 @@ fortune &rarr; Azure Storage Queue &rarr; Python Consumer Demo
 
 **NOTE:** Azure Storage Queue names are always **all lowercase**.
 
-#### Run ./qput.py to post and ./qread.py to read from queue:
-
+#### Run `./qput.py` to post and `./qread.py` to read from queue:
     $ ./qput.py
     Writing to Azure Storage Queue queue1...
     !!!!!!!!!!!!!!!!!!!
@@ -34,3 +32,9 @@ fortune &rarr; Azure Storage Queue &rarr; Python Consumer Demo
 
     ----------------------------------------
 
+#### Dependencies:
+    $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+    $ pip install azure-storage blessings subprocess
+    
+#### How to use the Azure Storage SDK with Python:
+https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-queue-storage
